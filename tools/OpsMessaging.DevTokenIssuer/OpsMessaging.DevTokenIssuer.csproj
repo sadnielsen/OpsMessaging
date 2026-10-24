@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!--
+    Minimal OIDC provider (discovery, JWKS, POST /token) that imitates Entra ID.
+    LOCAL USE ONLY: it hands out tokens to anyone who asks.
+  -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpsMessaging.DevAuth\OpsMessaging.DevAuth.csproj" />
+  </ItemGroup>
+
+</Project>

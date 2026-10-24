@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Class library with DevTokenFactory: creates Entra ID-like JWT access tokens for local
+    development and tests. LOCAL USE ONLY. Shared by DevTokenIssuer and the test projects.
+  -->
+
+</Project>

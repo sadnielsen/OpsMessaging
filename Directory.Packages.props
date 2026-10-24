@@ -1,0 +1,20 @@
+<Project>
+  <!--
+    Central Package Management: every NuGet version is defined here, once.
+    Project files only say WHICH package they use, never WHICH version.
+  -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup Label="Testing">
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
+    <!--
+      xunit.v3 stays on 3.x on purpose: 4.x moves to Microsoft Testing Platform v2, and
+      Reqnroll (acceptance tests, phase 6) is built against the xunit.v3 3.x extensibility API.
+    -->
+    <PackageVersion Include="xunit.v3" Version="3.2.2" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
+    <PackageVersion Include="Shouldly" Version="4.3.0" />
+    <PackageVersion Include="NetArchTest.Rules" Version="1.3.2" />
+  </ItemGroup>
+</Project>
