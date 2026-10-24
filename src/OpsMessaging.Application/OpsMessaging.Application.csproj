@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    CONCEPT (Clean Architecture): Application contains the use cases and the "ports"
+    (interfaces in Abstractions/) that describe what it needs from the outside world.
+    It depends only on Domain.
+  -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpsMessaging.Domain\OpsMessaging.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

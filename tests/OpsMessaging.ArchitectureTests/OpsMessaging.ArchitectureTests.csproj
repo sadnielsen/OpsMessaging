@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit.v3" />
+    <PackageReference Include="xunit.runner.visualstudio" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Shouldly" />
+    <PackageReference Include="NetArchTest.Rules" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\OpsMessaging.Domain\OpsMessaging.Domain.csproj" />
+    <ProjectReference Include="..\..\src\OpsMessaging.Application\OpsMessaging.Application.csproj" />
+    <ProjectReference Include="..\..\src\OpsMessaging.Infrastructure\OpsMessaging.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\OpsMessaging.Api\OpsMessaging.Api.csproj" />
+  </ItemGroup>
+
+</Project>

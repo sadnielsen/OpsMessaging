@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!--
+    CONCEPT (Clean Architecture): Api is the "driving adapter" (HTTP) and the composition root.
+    It references Infrastructure ONLY to register adapters at startup (Program.cs);
+    endpoints talk to Application. An architecture test enforces this.
+  -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpsMessaging.Application\OpsMessaging.Application.csproj" />
+    <ProjectReference Include="..\OpsMessaging.Infrastructure\OpsMessaging.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

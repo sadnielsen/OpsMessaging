@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    CONCEPT (Clean Architecture): The Domain is the center of the "onion". It has NO project
+    references and NO package references: only the .NET base class library. Business rules
+    therefore never depend on databases, HTTP or frameworks.
+  -->
+
+</Project>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    CONCEPT (Clean Architecture): Infrastructure contains the "adapters" that implement the
+    ports from Application (repository, recipient directory, channel dispatcher, ...).
+    Dependencies point inwards: Infrastructure knows Application, never the other way round.
+  -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpsMessaging.Application\OpsMessaging.Application.csproj" />
+  </ItemGroup>
+
+</Project>
