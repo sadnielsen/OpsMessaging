@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "OpsMessaging.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:60572;http://localhost:60575"
+    }
+  }
+}
