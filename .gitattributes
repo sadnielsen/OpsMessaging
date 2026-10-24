@@ -1,0 +1,13 @@
+# Normalize line endings: LF in the repository and in the working copy, on every OS.
+# This matches `end_of_line = lf` in .editorconfig, so `dotnet format --verify-no-changes`
+# gives the same result on Windows, Linux and in CI.
+* text=auto eol=lf
+
+# Visual Studio expects CRLF in solution files (also set in .editorconfig).
+*.sln text eol=crlf
+
+# Binary files: never touch.
+*.png binary
+*.jpg binary
+*.ico binary
+*.pfx binary
